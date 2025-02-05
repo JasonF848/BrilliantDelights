@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Zensory Candle Co. - Explore our full catalog of premium scented candles.">
+    <meta name="description" content="Brilliant Delights Co. - Belgin Chocolate.">
     <title>Catalog - Brilliant Delights Co.</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -16,6 +16,10 @@
                 <a href="index.html">Brilliant Delights Co.</a>
             </div>
             <div class="menu-container">
+                <a href="cart.html" class="cart-icon">
+                    🛒
+                    <span class="cart-count">0</span>
+                </a>
                 <button class="menu-toggle">☰</button>
                 <ul class="menu">
                     <li><a href="index.html">Home</a></li>
@@ -31,24 +35,23 @@
         <h2>Our Full Catalog</h2>
         <div class="products-container">
             <!-- Product 1 -->
-            <div class="product">
-                <img src="images/product1.jpeg" alt="Lavender Bliss Candle">
-                <h3>Slabs</h3>
-                <p>$24.99</p>
+            <div class="product" data-id="1" data-name="Slab" data-price="24.99" data-image="images/product1.jpeg">
+                <img src="images/product1.jpeg" alt="Slabs">
+                <h3>Slab</h3>
+                <p>R24.99</p>
             </div>
             <!-- Product 2 -->
-            <div class="product">
-                <img src="images/product2.jpg" alt="Vanilla Dream Candle">
-                <h3>Individuals</h3>
-                <p>$19.99</p>
+            <div class="product" data-id="2" data-name="Individual" data-price="19.99" data-image="images/product2.jpg">
+                <img src="images/product2.jpg" alt="Individuals">
+                <h3>Individual</h3>
+                <p>R19.99</p>
             </div>
             <!-- Product 3 -->
-            <div class="product">
-                <img src="images/product3.jpg" alt="Rose Petals Candle">
-                <h3>Boxes</h3>
-                <p>$22.99</p>
+            <div class="product" data-id="3" data-name="Box" data-price="22.99" data-image="images/product3.jpg">
+                <img src="images/product3.jpg" alt="Boxes">
+                <h3>Box</h3>
+                <p>R22.99</p>
             </div>
-            <!-- Add more products as needed -->
         </div>
     </section>
 
@@ -57,6 +60,7 @@
         <p>&copy; 2025 Brilliant Delights Co. All Rights Reserved.</p>
     </footer>
 
+    <!-- Scripts -->
     <script src="script.js"></script>
 </body>
 </html>
