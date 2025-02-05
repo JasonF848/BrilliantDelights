@@ -3,35 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Brillant Delights Co. - Premium Belgian Chocolate.">
-    <title>Brillant Delights Co.</title>
+    <meta name="description" content="Brilliant Delights Co. - Premium Belgin Chocolate.">
+    <title>Brilliant Delights Co.</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <!-- Header & Navigation -->
-<header>
-    <nav>
-        <div class="logo">
-            <a href="index.html">Brilliant Delights Co.</a>
-        </div>
-        <div class="menu-container">
-            <button class="menu-toggle">☰</button>
-            <ul class="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="catalog.html">Catalog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-</header>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">Brilliant Delights Co.</a>
+            </div>
+            <div class="menu-container">
+                <a href="cart.html" class="cart-icon">
+                    🛒
+                    <span class="cart-count">0</span>
+                </a>
+                <button class="menu-toggle">☰</button>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="catalog.html">Catalog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <h1>Belgian Chocolate</h1>
+            <h1>Belgin Chocolate</h1>
             <p>Handcrafted with love.</p>
-            <a href="#" class="btn">Shop Now</a>
+            <a href="catalog.html" class="btn">Shop Now</a>
         </div>
     </section>
 
@@ -40,34 +44,33 @@
         <h2>Featured Products</h2>
         <div class="products-container">
             <!-- Product 1 -->
-            <div class="product">
-                <img src="images/product1.jpeg" alt="Lavender Bliss Candle">
-                <h3>Slabs</h3>
-                <p>$24.99</p>
+            <div class="product" data-id="1" data-name="Slab" data-price="24.99" data-image="images/product1.jpeg">
+                <img src="images/product1.jpeg" alt="Slabs">
+                <h3>Slab</h3>
+                <p>R24.99</p>
             </div>
             <!-- Product 2 -->
-            <div class="product">
-                <img src="images/product2.jpg" alt="Vanilla Dream Candle">
-                <h3>Individuals</h3>
-                <p>$19.99</p>
+            <div class="product" data-id="2" data-name="Individual" data-price="19.99" data-image="images/product2.jpg">
+                <img src="images/product2.jpg" alt="Individuals">
+                <h3>Individual</h3>
+                <p>R19.99</p>
             </div>
             <!-- Product 3 -->
-            <div class="product">
-                <img src="images/product3.jpg" alt="Rose Petals Candle">
-                <h3>Boxes</h3>
-                <p>$22.99</p>
+            <div class="product" data-id="3" data-name="Box" data-price="22.99" data-image="images/product3.jpg">
+                <img src="images/product3.jpg" alt="Boxes">
+                <h3>Box</h3>
+                <p>R22.99</p>
             </div>
         </div>
     </section>
 
-    <!-- Subscribe Section -->
-    <section class="subscribe">
-        <h2>Join Our Candle Community</h2>
-        <p>Sign up for exclusive offers and updates.</p>
-        <form>
-            <input type="email" placeholder="Enter your email" required>
-            <button type="submit" class="subscribe-btn">Subscribe</button>
-        </form>
+    <!-- Hero Section1 -->
+    <section class="bottom">
+        <div class="bottom-content1">
+            <h1>Subscribe</h1>
+            <p>Get emails with latest news, promotions and products.</p>
+            <a href="catalog.html" class="btn">Subscribe</a>
+        </div>
     </section>
 
     <!-- Footer -->
@@ -75,6 +78,7 @@
         <p>&copy; 2025 Brilliant Delights Co. All Rights Reserved.</p>
     </footer>
 
+    <!-- Scripts -->
     <script src="script.js"></script>
 </body>
 </html>
