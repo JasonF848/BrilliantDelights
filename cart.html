@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Brilliant Delights Co. - Review your order and send it via email.">
+    <title>Order Cart - Brilliant Delights Co.</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">Brilliant Delights Co.</a>
+            </div>
+            <div class="menu-container">
+                <a href="cart.html" class="cart-icon">
+                    🛒
+                    <span class="cart-count">0</span>
+                </a>
+                <button class="menu-toggle">☰</button>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="catalog.html">Catalog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Order Cart Section -->
+    <section class="cart">
+        <h2>Your Order Cart</h2>
+        <div class="cart-items">
+            <!-- Cart items will be dynamically added here -->
+        </div>
+        <div class="cart-total">
+            <h3>Total: R<span id="total-amount">0.00</span></h3>
+        </div>
+        <form class="order-form">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit" class="btn">Send Order</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Brilliant Delights Co. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
